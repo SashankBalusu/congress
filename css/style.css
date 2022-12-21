@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(https://img.freepik.com/free-vector/gradient-background-green-tones_23-2148374530.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+button {
+    display: block;
+    border-radius: 6px;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+input {
+    margin: 40px auto;
+    display: block;
+    border-radius: 6px;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#submit {
+    margin: 20px auto;
+    font-size: 20px;
+
+
+}

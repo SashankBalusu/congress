@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0fbfc;
+}
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(4em + 1px);
+    margin: 0 0 1em;
+    padding: 1em 1em 2px 1em;    border: 1px solid #ccc;
+    background: #fff;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+input[type="text"][required]:focus {
+    border-color: black;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+    color: black;
+    font-weight: bold;
+
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+    transition-duration: .2s;
+    transform: translate(0, -1.2em) scale(0.9, 0.9);
+}
+
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+}
+
+input[type="text"][required] + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="text"][required] + label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.connectionInput {
+    width: 100% !important;
+    padding-bottom: 2px;
+
+}
+#addConnection {
+    margin-right: -5px;
+    margin-top: 50px;
+    padding: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 1px solid black;
+
+
+    width: 50%;
+
+}
+#delConnection {
+    margin-top: 40px;
+    margin-right: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 1px solid black;
+    padding: none;
+    width: 50%;
+}
+#submitConnection {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+}
+button {
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+label {
+    font-family: 'Poppins', sans-serif;
+
+}
+input {
+    border-radius: 4px;
+
+}
+#namesCon {
+    display: none;
+}
+
+#afterSubmitCon {
+    display: none;
+    grid-template-areas: "people output";
+    grid-template-columns: 70% 30%;
+}
+h2, h1{
+    margin-left: 20px;
+}
+
+.rep {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#output {
+    display: grid;
+    grid-area: output;
+    height: 100vh;
+    background: #98c1d9;
+    position: fixed;
+    width: 30%;
+    left: 70%;
+    overflow-y: auto;
+
+}
+#chamberReal {
+    display: grid;
+    grid-area: people;
+    margin-top: 1%;
+}
+#containReps {
+    margin-top: 16%;
+}
+#nextCycle {
+    position: absolute;
+    width: fit-content;
+    right: 0;
+    top: 0;
+    padding: 4px;
+    margin-bottom: 35px;
+    background-color: rgb(238, 108, 77);
+    margin-top: 3%;
+    margin-right: 5px;
+}
+.sidenavBut {
+    margin-top: 60px;
+}
+.sidenavBut ~ .sidenavBut {
+    margin-top: 20px;
+}

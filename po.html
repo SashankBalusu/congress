@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/po.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+
+</head>
+<body>
+    <div id = "userInput">
+
+        <div id = "namesCon">
+            <h1 style = "color: black;">Chamber Info</h1>
+            <input id = "username" required = ""type = "text"></input>
+            <label alt='PO Name' placeholder='PO Name'></label>
+            
+            <input id = "connection" class = "connectionInput" required = ""type = "text"></input>
+            <label alt='Rep. Name' placeholder='Rep. Name'></label>
+            
+            <button id = "addConnection">+</button>
+            <button id = "delConnection">-</button>
+
+            <button id = "submitConnection">Complete Chamber Setup</button>
+
+        </div>
+        
+
+    </div>
+    <div id = "afterSubmitCon">
+        
+        <div id = "chamberReal">
+            <h1 id = "speechquestion">Current Mode: Speech</h1>
+            <div id = "containReps" style = "display: inline-block;">
+
+            </div>
+        </div>
+        <div id = "output">
+            <button id = "nextCycle">Next Cycle ⋙</button>
+
+        </div>
+    </div>
+    
+    <script src = "js/po.js" type = "module"></script>
+</body>
+</html>
