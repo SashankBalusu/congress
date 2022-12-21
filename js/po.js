@@ -155,6 +155,8 @@ if (!(urlParams.has("group"))){
     window.location = "doesntexist.html"
 }
 const groupName = urlParams.get("group")
+let linktogo = document.getElementById("linktogo")
+linktogo.textContent = "Chamber/Judges go to: sashankbalusu.github.io/congress/output.html?group=" + groupName
 let people = {}
 get(ref(database, "groups/" + groupName + "/people")).then((info) => {
     if (!(info.exists())){

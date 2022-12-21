@@ -158,3 +158,7 @@ h2, h1{
 .sidenavBut ~ .sidenavBut {
     margin-top: 20px;
 }
+#linktogo {
+    margin-top: 30px;
+    font-size: 15px;
+}
